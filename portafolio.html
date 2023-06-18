@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+    .fondo {
+        background-image: url("img/bg.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Bebas Neue', sans-serif;
+        margin: 0;
+    }
+    .fondo {
+        position: relative;
+    }
+
+    .fondo::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('img/bg.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px);
+        z-index: -1;
+    }
+
+    .fondo::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+h1 {
+    z-index: 1;
+    font-size: 100px;
+}
+    </style>
+    <title>Portafolio</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark bg-gradient border-bottom-dark" data-bs-theme="dark"">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="img/logo.png" width="30px" alt="" style="margin-right: 8px;">   Portafolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="row fondo align-items-center">
+        <h1 class="text-white title text-center">Developer FullStack</h1>
+    </div>
+
+    <div class="container mt-3">
+        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h1>
+        <p class="text-justify" style="text-align: justify;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum assumenda repudiandae inventore! Consequuntur, saepe expedita ipsam tempore quia reiciendis reprehenderit, corrupti itaque earum autem ex deserunt quis repellendus labore temporibus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius eligendi mollitia ut recusandae itaque est iste commodi odio quae similique a quos vel, rerum vitae cupiditate ab assumenda eum?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, incidunt at possimus iusto doloremque laborum temporibus tenetur culpa enim nostrum accusamus consequuntur veniam explicabo odit tempore laudantium voluptas, sed pariatur?
+        </p>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
